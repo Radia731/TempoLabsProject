@@ -1,0 +1,62 @@
+.hdr-container {
+    width: 100%;
+    background-color: #000000;
+    padding: 1px 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    box-sizing: border-box; 
+}
+
+.hdr-content {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.hdr-msg {
+    font-size: 14px;
+    color: #fdfdfd;
+    margin: 0;
+    line-height: normal;
+}
+
+.signup-btn {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #adafb1;
+}
+
+
+.hdr-container i {
+    position: absolute; 
+    right: 120px; 
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .hdr-container {
+        padding: 10px; 
+    }
+
+    .hdr-content {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .hdr-container i {
+        position: static; 
+        margin-top: 10px; 
+        align-self:center; 
+    }
+}
