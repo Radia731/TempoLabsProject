@@ -1,4 +1,5 @@
 import Header from './Components/header/Header';
+import Menu from './Components/menu/Menu';
 
 import './App.css'
 
@@ -8,7 +9,9 @@ function App() {
     <>
  
     <div>
-       <Header/>
+       <Menu/>
+       <Menu/>
+
     </div>
 
   
