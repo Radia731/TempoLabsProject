@@ -30,4 +30,4 @@ function Menu() {
     </div>
   )
   }
-export default Header;
+export default Menu;
