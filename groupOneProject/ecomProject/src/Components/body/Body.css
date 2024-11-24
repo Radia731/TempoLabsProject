@@ -1,12 +1,37 @@
 .body-bg {
     background-image: url('../../assets/bodybg.jpg'); 
     background-size: cover; 
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 100%;
     width: 100%;
-    height: 600px;
+    height: 750px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
+    
+}
+
+.sprinklebg{
+    position: relative;
+}
+
+.sprinkle-1{
+    position: absolute;
+    left: 1600px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/sprinkle2.svg');
+    background-repeat: no-repeat;
+
+}
+.sprinkle-2{
+    position: absolute;
+    top: 250px;
+    left: 920px;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../assets/sprinkle1.svg');
+    background-repeat: no-repeat;
     
 }
 .body-description{
@@ -85,3 +110,37 @@ button {
     border-bottom-right-radius: var(--radius);
 }
 
+.info-barContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:0;
+    margin: 40px 40px 40px 0px;
+    max-width: 720px;    
+}
+
+.info-item {
+    text-align: center; 
+}
+
+.info-number{
+    font-size: 36px;
+    font-weight: bold;
+    color:#000000;
+    margin: 0;
+}
+
+.info-label{
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(134, 124, 124, 0.6);
+    margin: 4px 0 0;
+
+}
+.divider {
+    width: 2px; 
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
