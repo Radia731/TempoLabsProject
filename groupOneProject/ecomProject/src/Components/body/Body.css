@@ -11,29 +11,39 @@
     
 }
 
-.sprinklebg{
-    position: relative;
+.sprinkle-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    pointer-events: none; 
+    z-index: 1; 
 }
 
-.sprinkle-1{
-    position: absolute;
-    left: 1600px;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../assets/sprinkle2.svg');
-    background-repeat: no-repeat;
 
-}
-.sprinkle-2{
+.sprinkle-1 {
     position: absolute;
-    top: 250px;
-    left: 920px;
-    width: 80px;
-    height: 80px;
+    top: 55%; 
+    left: 55%; 
+    width: 60px;
+    height: 60px;
     background-image: url('../../assets/sprinkle1.svg');
     background-repeat: no-repeat;
-    
+    background-size: contain; 
 }
+
+.sprinkle-2 {
+    position: absolute;
+    top: 30%; 
+    right: 10%; 
+    width: 80px;
+    height: 80px;
+    background-image: url('../../assets/sprinkle2.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
 .body-description{
     width: 100%;
     max-width: 600px;
@@ -144,3 +154,138 @@ button {
     height: 40px;
     background-color: rgba(0, 0, 0, 0.2); 
 }
+
+.brand-bar {
+    background-color: #000000;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; 
+    gap: 50px; 
+    padding: 20px 0; 
+    list-style: none;
+}
+
+.brand-bar li {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    color: aliceblue;
+    width: 180px; 
+    height: 40px; 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    margin: 0 10px; 
+}
+
+.versace-logo {
+    background-image: url('../../assets/Versace-logo.svg');
+}
+
+.zara-logo {
+    background-image: url('../../assets/zara-logo.svg'); 
+}
+
+.gucci-logo {
+    background-image: url('../../assets/gucci-logo.svg'); 
+}
+
+.prada-logo {
+    background-image: url('../../assets/prada-logo.svg'); 
+}
+
+.ck-logo {
+    background-image: url('../../assets/CK.logo.svg'); 
+}
+@media (max-width: 600px) {
+    .body-bg {
+        background-size:cover; 
+        background-position: center;
+        height: 100%;
+        width:100%; 
+    }
+
+    .sprinkle-1, .sprinkle-2 {
+         display: none;
+    }
+
+
+    .body-description {
+        margin: 10px;
+        width: fit-content;
+        text-align: center; 
+    }
+
+    .body-description p {
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .body-description h3 {
+        font-size: 12px;
+        width: 70%;
+        padding-bottom: 20px;
+        margin: 0px; 
+    }
+
+    .body-btn{
+     margin: 0%;
+     padding-left: 30px;
+
+    
+    }
+    .button-arounder {
+        font-size: 11px; 
+        padding: 10px 20px;
+        width: 120px; 
+        height: 35px; 
+    }
+
+    .info-barContainer {
+        
+        flex-direction:column; 
+        gap: 2px;
+        margin: 0px;
+        padding-left: 65px;
+        height: min-content;
+        width: min-content;
+        padding-bottom: 0px
+        
+        
+    }
+
+    .info-item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .info-label{
+        font-size: smaller;
+        margin: auto;
+    }
+    .info-number{
+        font-size: smaller;
+    }
+    .divider {
+        width: 20%; /* Adjust width of divider */
+        height: 1px; /* Reduce height */
+        
+        
+    }
+
+    .brand-bar {
+
+        gap: 15px; 
+        padding: 10px 0; 
+    }
+
+    .brand-bar li {
+        margin: 0 5px; 
+        width: 50px;
+    }
+
+}
+
